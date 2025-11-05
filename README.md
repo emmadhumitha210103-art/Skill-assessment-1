@@ -1,11 +1,16 @@
-# Skill-assessment-1
-Question
+Skill assessment-1
+
+
+Question :
+
 Write an assembly language program in 8086 to exchange the contents of two memory blocks of equal length.
 
-Aim
+Aim :
+
 To write an 8086 assembly language program to exchange the contents of two memory blocks of equal length.
 
-Algorithm
+Algorithm :
+
 - Start the program.
 - Initialize the Data Segment.
 - Store the starting addresses of both memory blocks in two registers (e.g., SI and DI).
@@ -20,7 +25,7 @@ Algorithm
 - Stop when all bytes are exchanged.
 - Terminate the program.
 
-Program
+Program :
 
 DATA SEGMENT
 BLOCK1 DB 10H, 20H, 30H, 40H, 50H     
@@ -52,13 +57,18 @@ EXCHANGE:
 CODE ENDS
 END START
 
-Output
+Output :
 
 
 
+<img width="752" height="540" alt="Screenshot 2025-11-05 at 23 14 28" src="https://github.com/user-attachments/assets/08f97220-d5b3-48e1-82fd-5426b89d8bc6" />
+
+<img width="752" height="540" alt="Screenshot 2025-11-05 at 23 14 43" src="https://github.com/user-attachments/assets/8b150a22-71e4-468c-a92c-09d77a6d99be" />
+
+<img width="541" height="358" alt="Screenshot 2025-11-05 at 23 19 07" src="https://github.com/user-attachments/assets/e9f9d4df-bd98-4802-8df6-0ecb90f8a06a" />
 
 
 
+Result :
 
-Result
 The 8086 assembly program was successfully executed, and the contents of the two memory blocks were exchanged correctly.
