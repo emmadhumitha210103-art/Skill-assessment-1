@@ -28,15 +28,21 @@ Algorithm :
 Program :
 
 DATA SEGMENT
-BLOCK1 DB 10H, 20H, 30H, 40H, 50H     
-BLOCK2 DB 60H, 70H, 80H, 90H, 0A0H     
-COUNT  DB 05H                          
+
+BLOCK1 DB 10H, 20H, 30H, 40H, 50H  
+
+BLOCK2 DB 60H, 70H, 80H, 90H, 0A0H   
+
+COUNT  DB 05H           
+
 DATA ENDS
 
 CODE SEGMENT
+
 ASSUME CS:CODE, DS:DATA
 
 START:
+
     MOV AX, DATA     
     MOV DS, AX
     MOV CL, COUNT     
@@ -44,6 +50,7 @@ START:
     LEA DI, BLOCK2  
 
 EXCHANGE:
+
     MOV AL, [SI]     
     MOV BL, [DI]      
     MOV [SI], BL      
@@ -54,7 +61,9 @@ EXCHANGE:
     JNZ EXCHANGE     
     MOV AH, 4CH       
     INT 21H
+    
 CODE ENDS
+
 END START
 
 Output :
